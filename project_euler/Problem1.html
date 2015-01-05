@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projecr Euler Problem 1</title>
+</head>
+<body>
+	<input type='number' min='0' value='1000'> base
+    <br/><br/> 
+
+	<input type='number' min='1' value='3'> multiple 1
+    <br/><br/>
+
+	<input type='number' min='1' value='5'> multiple 2
+	<br/><br/>
+	<button onclick='test()'>Press Me</button>
+
+	<p id="sum"></p>
+	<p id="time"></p>
+
+	<script>
+		function test() {
+		var a = performance.now();
+		var base = new Array();
+		base[0] = document.getElementsByTagName('input')[0].value;
+		base[1] = document.getElementsByTagName('input')[1].value;
+		base[2] = document.getElementsByTagName('input')[2].value;
+		base[3] = base[1]*base[2];
+		
+		var n1 = Math.floor(base[0]/base[1]);
+		var n2 = Math.floor(base[0]/base[2]);
+		var n3 = Math.floor(base[0]/base[3]);
+		
+		if (base[0]%base[1] == 0) { n1 = n1 - 1; }
+		if (base[0]%base[2] == 0) { n2 = n2 - 1; }
+		if (base[0]%base[3] == 0) { n3 = n3 - 1; }
+		
+		var total = base[1] * (n1*(n1+1)/2) + base[2] * (n2*(n2+1)/2) - base[3] * (n3*(n3+1)/2);
+		var b = performance.now();
+		var timeDiff =(b - a);
+
+    	document.getElementById('sum').innerHTML = "The sum of all the distinct multiples of " + base[1] + " and " + base[2] + " below " + base[0] + " is " + total;
+    	document.getElementById	('time').innerHTML	= "It took " + timeDiff	+ " milliseconds";
+		}
+	</script>
+</body>
+</html>
