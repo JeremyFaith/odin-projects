@@ -1,0 +1,154 @@
+body {
+	background: #2c3050;
+}
+
+#nav  {
+	height: 200px;
+	background: #0776a0 no-repeat center;
+}
+
+ #logo {
+	width: 600px;
+	height: 100px;
+	opacity: 1;	
+	margin: 0;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#portrait {
+	float: right;
+	width: 150px;
+	height: 175px;
+	margin-top: 10px;
+}
+
+#frame {
+	width: 750px;
+	margin: auto;
+	background: #2c3050;
+}
+
+.box {
+	z-index: 1;
+	width: 400px;
+	height: 250px;
+	background: #db5925;
+	border: 5px solid white;
+	margin: 20px 20px;
+}
+
+#prob2 {
+	position: relative;	
+	left: 300px;
+}
+
+.circle {
+	position: relative;	
+	width: 150px;
+	height: 150px;
+	left: 320px;
+	background:#0776a0;
+	border: 5px solid white;
+	border-radius: 	50%;
+}
+
+.circle2 {
+	position: relative;	
+	width: 150px;
+	height: 150px;
+	right: 80px;
+	background:#0776a0;
+	border: 5px solid white;
+	border-radius: 	50%;
+}
+
+.color {
+	background: white;
+	text-align: center;	
+}
+
+p#soln1, p#soln2, p#soln3 {
+	margin: 0;
+	position: absolute;
+	font-size: 2em;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.left {
+	float: left;
+	width: 75%;
+	word-wrap: break-word;
+	font-family: Courier;
+	font-size: 12px;
+	font-weight: 900;
+	margin-top: 0;
+	padding-left: 10px;
+	color: white;
+}
+
+.right {
+	float: right;
+	width: 75%;
+	word-wrap: break-word;
+	font-family: Courier;
+	font-size: 12px;
+	font-weight: 900;
+	margin-top: 0;
+	padding-left: 10px;
+	color: white;
+}
+
+.problem {
+	font-family: Courier;
+}
+
+footer {
+	height: 75px;
+	background: black;
+}
+
+#footer p {
+	font-family: "Courier New";
+	color: #666;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#sidebox1, #sidebox2, #sidebox3 {	
+	position: absolute;	
+	float: left;
+	width: 200px;
+	height: 250px;
+	background: white;
+	border: 5px solid #0776a0;
+	visibility: hidden;	
+}
+
+#sidebox1 {
+	top: 228px;
+	left: 1095px;
+}
+
+#sidebox2 {
+	top: 508px;
+	left: 600px;
+}
+
+#sidebox3 {
+	top: 788px;
+	left: 1095px;
+}
+
+input[type='number'], #factors p, button, 
+#sidebox1 p, #sidebox2 p, #sidebox3 p {
+	margin: 5px;
+}
