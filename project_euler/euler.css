@@ -4,13 +4,12 @@ body {
 
 #nav  {
 	height: 200px;
-	background: #0776a0 no-repeat center;
+	background: #0776a0;
 }
 
  #logo {
 	width: 600px;
 	height: 100px;
-	opacity: 1;	
 	margin: 0;
 	position: relative;
 	top: 50%;
@@ -20,50 +19,67 @@ body {
 }
 
 #portrait {
-	float: right;
-	width: 150px;
-	height: 175px;
-	margin-top: 10px;
+		float: right;
+		width: 150px;
+		height: 175px;
+		margin-top: 10px;
+}
+
+@media all and (max-width: 1000px) {
+	#portrait {
+		display: none;
+	}
 }
 
 #frame {
 	width: 750px;
 	margin: auto;
 	background: #2c3050;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
 }
 
-.box {
-	z-index: 1;
+#item1, #item2, #item3 {
+	display: flex;
+	 flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {	
 	width: 400px;
 	height: 250px;
 	background: #db5925;
 	border: 5px solid white;
-	margin: 20px 20px;
+	margin: 20px 80px 20px 0;
+}
+
+#sidebox2 {
+	margin: 20px 80px 20px 0;
 }
 
 #prob2 {
+	margin-right: 0;
+}
+
+.circle, .circle2 {
 	position: relative;	
-	left: 300px;
+	width: 150px;
+	height: 150px;	
+	background:#0776a0;
+	border: 5px solid white;
+	border-radius: 	50%;
 }
 
 .circle {
-	position: relative;	
-	width: 150px;
-	height: 150px;
 	left: 320px;
-	background:#0776a0;
-	border: 5px solid white;
-	border-radius: 	50%;
 }
 
-.circle2 {
-	position: relative;	
-	width: 150px;
-	height: 150px;
+.circle2 {	
 	right: 80px;
-	background:#0776a0;
-	border: 5px solid white;
-	border-radius: 	50%;
 }
 
 .color {
@@ -82,7 +98,7 @@ p#soln1, p#soln2, p#soln3 {
 	color: white;
 }
 
-.left {
+.left, .right {
 	float: left;
 	width: 75%;
 	word-wrap: break-word;
@@ -95,15 +111,7 @@ p#soln1, p#soln2, p#soln3 {
 }
 
 .right {
-	float: right;
-	width: 75%;
-	word-wrap: break-word;
-	font-family: Courier;
-	font-size: 12px;
-	font-weight: 900;
-	margin-top: 0;
-	padding-left: 10px;
-	color: white;
+	float: right;	
 }
 
 .problem {
@@ -124,28 +132,12 @@ footer {
 }
 
 #sidebox1, #sidebox2, #sidebox3 {	
-	position: absolute;	
-	float: left;
+	z-index: 1;
 	width: 200px;
 	height: 250px;
 	background: white;
 	border: 5px solid #0776a0;
 	visibility: hidden;	
-}
-
-#sidebox1 {
-	top: 228px;
-	left: 1095px;
-}
-
-#sidebox2 {
-	top: 508px;
-	left: 600px;
-}
-
-#sidebox3 {
-	top: 788px;
-	left: 1095px;
 }
 
 input[type='number'], #factors p, button, 
