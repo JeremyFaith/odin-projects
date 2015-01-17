@@ -118,17 +118,13 @@ p#soln1, p#soln2, p#soln3 {
 	font-family: Courier;
 }
 
-footer {
-	height: 75px;
-	background: black;
-}
-
-#footer p {
+#footer {
 	font-family: "Courier New";
-	color: #666;
-	font-size: 36px;
+	color: red;
+	font-size: 24px;
 	text-align: center;
-	padding-top: 15px;
+	margin-top: 45px;
+	border-bottom: 6px solid black;
 }
 
 #sidebox1, #sidebox2, #sidebox3 {	
