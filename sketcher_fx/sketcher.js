@@ -1,4 +1,4 @@
-start(16);
+
 
 function start(n) {
 	var n;
@@ -129,3 +129,5 @@ function buttonColor(button) {
 	}
 
 }
+
+start(16);
