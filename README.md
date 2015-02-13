@@ -1,3 +1,3 @@
 odin-projects
 =============
-Learning projects from The Odin Project
+Projects for learning web development
