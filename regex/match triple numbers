@@ -1,1 +1,0 @@
- match triple numbers -- /(\d)\1{2}/g
